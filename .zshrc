@@ -21,4 +21,5 @@ plugins=(git mercurial)
 
 source $ZSH/oh-my-zsh.sh
 
+RPROMPT=''
 . /home/guy/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
