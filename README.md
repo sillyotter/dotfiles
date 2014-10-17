@@ -1,4 +1,4 @@
-dotfiles
+My Config Files
 ========
 
-unix dot files
+Various linux/osx config files
