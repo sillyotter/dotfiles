@@ -87,10 +87,10 @@ execute "set rtp+=" . g:opamshare . "/merlin/vim"
 execute "set rtp+=" . g:opamshare . "/merlin/vimbufsync"
 
 
-autocmd FileType fsharp map <Leader>int :call VimuxRunCommand("clear; fsharpi " . bufname("%"))<CR>
-autocmd FileType fsharp map <Leader>int :call VimuxRunCommand("clear; utop " . bufname("%"))<CR>
-autocmd FileType fsharp map <Leader>int :call VimuxRunCommand("clear; ghci " . bufname("%"))<CR>
-autocmd FileType python map <Leader>int :call VimuxRunCommand("clear; python " . bufname("%"))<CR>
+autocmd FileType fsharp map <Leader>ru :call VimuxRunCommand("clear; fsharpi " . bufname("%"))<CR>
+autocmd FileType ocaml map <Leader>ru :call VimuxRunCommand("clear; utop " . bufname("%"))<CR>
+autocmd FileType haskell map <Leader>ru :call VimuxRunCommand("clear; ghci " . bufname("%"))<CR>
+autocmd FileType python map <Leader>ru :call VimuxRunCommand("clear; python " . bufname("%"))<CR>
 
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
