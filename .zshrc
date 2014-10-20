@@ -1,5 +1,7 @@
 export PATH="/home/guy/proj/go/bin:/home/guy/proj/gopath/bin:/home/guy/.opam/system/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"
 
+fpath=(~/.zsh $fpath)
+
 if [[ -z $TMUX && -n $SSH_TTY ]]; then
     me=$(whoami)
 
@@ -20,6 +22,7 @@ ZSH_THEME="clean"
 plugins=(git mercurial)
 
 source $ZSH/oh-my-zsh.sh
+eval "$(hub alias -s)"
 
 RPROMPT=''
 . /home/guy/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

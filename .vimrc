@@ -37,9 +37,11 @@ let g:airline_right_sep = ''
 let g:airline#extensions#syntastic#enabled=1
 let g:airline#extensions#branch#enabled=1
 
+let g:syntastic_check_on_open=1
 let g:syntastic_ocaml_checkers = ['merlin']
 
 autocmd FileType ocaml call SuperTabSetDefaultCompletionType("<c-x><c-o>")
+autocmd FileType fsharp call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 
 colorscheme solarized
 
