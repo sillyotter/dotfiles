@@ -42,6 +42,7 @@ let g:syntastic_ocaml_checkers = ['merlin']
 
 autocmd FileType ocaml call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 autocmd FileType fsharp call SuperTabSetDefaultCompletionType("<c-x><c-o>")
+autocmd Filetype gitcommit set tw=78 spell
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 colorscheme solarized
@@ -50,6 +51,8 @@ syntax on
 
 map <C-n> :NERDTreeToggle<CR>
 
+set spelllang=en
+set spellfile=~/.vim/en.utf-8.add
 setglobal fileencoding=utf-8
 set wildmode=list:longest,full
 set foldmethod=syntax
