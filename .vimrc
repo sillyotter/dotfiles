@@ -43,6 +43,7 @@ let g:syntastic_ocaml_checkers = ['merlin']
 autocmd FileType ocaml call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 autocmd FileType fsharp call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 colorscheme solarized
 
 syntax on
