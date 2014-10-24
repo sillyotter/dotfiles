@@ -82,6 +82,9 @@ set shiftround
 set expandtab
 set tabstop=4
 set softtabstop=4
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
