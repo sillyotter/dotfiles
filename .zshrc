@@ -7,7 +7,7 @@ function start_agent {
      chmod 600 "${SSH_ENV}"
      . "${SSH_ENV}" > /dev/null
      /usr/bin/ssh-add
-     /usr/bin/ssh-add ~/.ssh/github-ubs.prv
+     /usr/bin/ssh-add ~/.ssh/github
 }
 
 # Source SSH settings, if applicable
