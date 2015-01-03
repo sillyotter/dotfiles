@@ -7,14 +7,14 @@
 #require "variantslib.syntax"
 #require "fieldslib.syntax"
 #require "comparelib.syntax"
-#require "core"
 #require "async"
 #require "core_extended"
 #require "core.top"
+#require "core"
 open Core.Std
 
 (* Added by OPAM. *)
-(* let () =
+(*let () =
   try Topdirs.dir_directory (Sys.getenv "OCAML_TOPLEVEL_PATH")
   with Not_found -> ()
 ;;

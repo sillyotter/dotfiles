@@ -19,6 +19,8 @@ Plugin 'bling/vim-airline'
 Plugin 'mileszs/ack.vim'
 Plugin 'OCamlPro/ocp-indent'
 Plugin 'benmills/vimux'
+Plugin 'OmniSharp/omnisharp-vim'
+Plugin 'tpope/vim-dispatch'
 call vundle#end()
 
 filetype plugin indent on
