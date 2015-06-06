@@ -13,5 +13,6 @@ export GOPATH=~/Projects/gopath/
 
 export TF_AUTO_SAVE_CREDENTIALS=0
 
-export PATH="$PATH:$HOME/Applications/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export PATH="$PATH:$HOME/Applications/:$HOME/Projects/go/bin:/opt/TFS/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
 . /home/guy/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
