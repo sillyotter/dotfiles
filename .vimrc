@@ -7,7 +7,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'ervandew/supertab'
-Plugin 'file:///home/guy/.vim/bundle/fsharpbinding-vim', {'pinned': 1}
+"Plugin 'file:///home/guy/.vim/bundle/fsharpbinding-vim', {'pinned': 1}
+Plugin 'fsharp/vim-fsharp'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
@@ -21,6 +22,7 @@ Plugin 'OCamlPro/ocp-indent'
 Plugin 'benmills/vimux'
 Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'tpope/vim-dispatch'
+Plugin 'rust-lang/rust.vim'
 call vundle#end()
 
 filetype plugin indent on
