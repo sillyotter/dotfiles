@@ -10,8 +10,8 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 export GOPATH=~/Projects/gopath/
+export TF_AUTO_SAVE_CREDENTIALS=0
 
 . /home/guy/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
 export PATH="$PATH:$HOME/Applications/:$HOME/.rvm/bin:/opt/0xDBE-139.795.5/bin:/opt/idea-IC-139.659.2/bin:/opt/pycharm-community-4.0.4/bin:/opt/scala-2.11.4/bin/:/home/guy/Projects/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 source ~/.rvm/scripts/rvm
