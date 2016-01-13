@@ -7,7 +7,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'ervandew/supertab'
-"Plugin 'file:///home/guy/.vim/bundle/fsharpbinding-vim', {'pinned': 1}
 Plugin 'fsharp/vim-fsharp'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
@@ -16,10 +15,14 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'fatih/vim-go'
+Plugin 'vimwiki/vimwiki'
 Plugin 'bling/vim-airline'
+Plugin 'lambdatoast/elm.vim'
 Plugin 'mileszs/ack.vim'
-Plugin 'OCamlPro/ocp-indent'
-Plugin 'the-lambda-church/merlin'
+"Plugin 'OcamlPro/ocp-indent'
+Plugin 'def-lkb/ocp-indent-vim'
+Plugin 'the-lambda-church/merlin', {'name': 'vimbufsync', 'rtp': 'vim/vimbufsync'}
+Plugin 'the-lambda-church/merlin', {'rtp': 'vim/merlin'}
 Plugin 'benmills/vimux'
 Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'tpope/vim-dispatch'
@@ -30,6 +33,7 @@ filetype plugin indent on
 
 set t_Co=256
 set background=dark
+set directory=~/Temp
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 let g:SuperTabDefaultCompletionType="context"
@@ -44,6 +48,8 @@ let g:airline#extensions#branch#enabled=1
 
 let g:syntastic_check_on_open=1
 let g:syntastic_ocaml_checkers = ['merlin']
+
+"let g:ocp_indent_args='--indent-empty'
 
 autocmd FileType ocaml call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 autocmd FileType fsharp call SuperTabSetDefaultCompletionType("<c-x><c-o>")
@@ -82,23 +88,24 @@ set magic
 set smartcase
 set nowrap
 set autoindent
-set shiftwidth=4
+set shiftwidth=2
 set shiftround
 set expandtab
-set tabstop=4
-set softtabstop=4
+set tabstop=2
+set softtabstop=2
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
+"
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki', 'path_html':'~/Documents'}]
 
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
             \ 'dir': '\.git$\|\.hg$\|\.svn$',
             \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$\|\~$' }
 
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
-execute "set rtp+=" . g:opamshare . "/merlin/vimbufsync"
+"let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+"execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 
 autocmd FileType fsharp map <Leader>ru :call VimuxRunCommand("clear; fsharpi " . bufname("%"))<CR>
