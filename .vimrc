@@ -19,7 +19,6 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'bling/vim-airline'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'mileszs/ack.vim'
-"Plugin 'OcamlPro/ocp-indent'
 Plugin 'def-lkb/ocp-indent-vim'
 Plugin 'the-lambda-church/merlin', {'name': 'vimbufsync', 'rtp': 'vim/vimbufsync'}
 Plugin 'the-lambda-church/merlin', {'rtp': 'vim/merlin'}
