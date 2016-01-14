@@ -3,8 +3,7 @@ ZSH_THEME="clean"
 
 plugins=(git archlinux docker git-extras lein mercurial npm redis-cli systemd taskwarrior )
 
-#alias 1pwd="firefox --new-tab http://localhost:8000/1Password.html"
-
+function regex { gawk 'match($0,/'$1'/, ary) { print ary['${2:-'0'}']}'; }
 
 source $ZSH/oh-my-zsh.sh
 RPROMPT='[%D{%L:%M%P}]'
