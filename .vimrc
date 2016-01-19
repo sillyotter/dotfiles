@@ -35,7 +35,7 @@ set background=dark
 set directory=~/Temp
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
-let g:SuperTabDefaultCompletionType="context"
+let g:SuperTabDefaultCompletionType="<c-x><c-o>"
 let g:SuperTabLongestEnhanced=1
 let g:SuperTabLongetHighlight=1
 let g:SuperTabClosePreviewOnPopupClose=1
@@ -107,7 +107,7 @@ let g:ctrlp_custom_ignore = {
 "execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 
-autocmd FileType fsharp map <Leader>ru :call VimuxRunCommand("clear; fsharpi " . bufname("%"))<CR>
+"autocmd FileType fsharp map <Leader>ru :call VimuxRunCommand("clear; fsharpi " . bufname("%"))<CR>
 autocmd FileType ocaml map <Leader>ru :call VimuxRunCommand("clear; utop " . bufname("%"))<CR>
 autocmd FileType haskell map <Leader>ru :call VimuxRunCommand("clear; ghci " . bufname("%"))<CR>
 autocmd FileType python map <Leader>ru :call VimuxRunCommand("clear; python " . bufname("%"))<CR>
