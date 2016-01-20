@@ -12,6 +12,7 @@ alias emacs="emacsclient -c -n"
 alias e=emacs
 alias eg=emacs
 alias ec=cmacs
+alias code=visual-studio-code
 
 source $ZSH/oh-my-zsh.sh
 RPROMPT='[%D{%L:%M%P}]'
@@ -19,4 +20,3 @@ RPROMPT='[%D{%L:%M%P}]'
 eval $(keychain --eval --quiet id_rsa github.priv)
 
 
-[ -s "/home/guy/.dnx/dnvm/dnvm.sh" ] && . "/home/guy/.dnx/dnvm/dnvm.sh" # Load dnvm
