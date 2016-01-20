@@ -16,4 +16,7 @@ alias ec=cmacs
 source $ZSH/oh-my-zsh.sh
 RPROMPT='[%D{%L:%M%P}]'
 
+eval $(keychain --eval --quiet id_rsa github.priv)
+
+
 [ -s "/home/guy/.dnx/dnvm/dnvm.sh" ] && . "/home/guy/.dnx/dnvm/dnvm.sh" # Load dnvm
