@@ -17,6 +17,6 @@ alias code=visual-studio-code
 source $ZSH/oh-my-zsh.sh
 RPROMPT='[%D{%L:%M%P}]'
 
-eval $(keychain --eval --quiet id_rsa github.priv)
+eval $(keychain --eval --quiet id_rsa github.priv router.priv )
 
 

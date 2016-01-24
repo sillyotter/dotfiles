@@ -33,6 +33,7 @@ filetype plugin indent on
 set t_Co=256
 set background=dark
 set directory=~/Temp
+let g:vimwiki_url_maxsave=0
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 let g:SuperTabDefaultCompletionType="<c-x><c-o>"
