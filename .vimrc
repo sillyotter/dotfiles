@@ -54,7 +54,7 @@ let g:syntastic_ocaml_checkers = ['merlin']
 autocmd FileType ocaml call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 autocmd FileType fsharp call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 autocmd Filetype gitcommit set tw=78 spell
-
+autocmd Filetype mail set tw=72 wrap spell nocp 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 colorscheme solarized
 
