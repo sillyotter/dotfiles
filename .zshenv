@@ -6,7 +6,7 @@ export PATH="$HOME/Applications/git-tf:/usr/local/bin:$HOME/Applications:$HOME/P
 
 export LANG=en_US.UTF-8
 
-export BROWSER=/usr/bin/chromium
+#export BROWSER=/usr/bin/chromium
 export EDITOR=vim
 export VISUAL=vim
 
