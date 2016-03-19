@@ -20,13 +20,15 @@ Plugin 'bling/vim-airline'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'def-lkb/ocp-indent-vim'
-Plugin 'the-lambda-church/merlin', {'name': 'vimbufsync', 'rtp': 'vim/vimbufsync'}
-Plugin 'the-lambda-church/merlin', {'rtp': 'vim/merlin'}
 Plugin 'benmills/vimux'
 Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'rust-lang/rust.vim'
 call vundle#end()
+
+
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 filetype plugin indent on
 

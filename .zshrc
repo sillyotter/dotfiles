@@ -14,9 +14,7 @@ function regex {
 #alias ec=cmacs
 alias fsi=fsharpi --colorconsole+ --readline+ --tailcalls+
 
-alias wds="wol d4:be:d9:a6:10:3f"
-alias code=visual-studio-code
-#alias rdock="docker --tls=false -H tcp://devsrv.local:2375 "
+alias wds="wakeonlan d4:be:d9:a6:10:3f"
 export DOCKER_HOST=tcp://devsrv.local:2376
 export DOCKER_TLS_VERIFY=1
 
@@ -26,6 +24,8 @@ export MUTTCFG="home"
 alias mw="MUTTCFG='work' mutt"
 alias mh="MUTTCFG='home' mutt"
 
-eval $(keychain --eval --quiet id_rsa github.priv router.priv )
+#eval $(keychain --eval --quiet id_rsa github.priv router.priv )
 
+
+. /home/guy/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
