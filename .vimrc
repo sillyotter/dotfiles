@@ -11,12 +11,15 @@ Plugin 'fsharp/vim-fsharp'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
+Plugin 'toyamarinyon/vim-swift'
 Plugin 'kien/ctrlp.vim'
+Plugin 'elixir-lang/vim-elixir'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'fatih/vim-go'
 Plugin 'vimwiki/vimwiki'
 Plugin 'bling/vim-airline'
+Plugin 'twerth/ir_black.git'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'def-lkb/ocp-indent-vim'
@@ -58,7 +61,7 @@ autocmd FileType fsharp call SuperTabSetDefaultCompletionType("<c-x><c-o>")
 autocmd Filetype gitcommit set tw=78 spell
 autocmd Filetype mail set tw=72 wrap spell nocp 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-colorscheme solarized
+colorscheme ir_black
 
 syntax on
 

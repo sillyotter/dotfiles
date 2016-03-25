@@ -12,6 +12,7 @@ function regex {
 #alias e=emacs
 #alias eg=emacs
 #alias ec=cmacs
+alias 1pwd='chromium http://localhost:8080'
 alias fsi=fsharpi --colorconsole+ --readline+ --tailcalls+
 
 alias wds="wakeonlan d4:be:d9:a6:10:3f"
